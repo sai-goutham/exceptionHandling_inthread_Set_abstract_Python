@@ -1,0 +1,22 @@
+put()-->put an item into the queue 
+get()-->remove and return an item from queue 
+
+
+producer thread uses put() method to insert data in the queue .internally this method has logic to 
+acquire the lock before inserting  data into queue.after inserting data lock will be released automatically 
+
+
+put() method also checks whether the queue is full or not and if queue is full then the producer thread will entered into waiting
+state by calling wait() method internally 
+
+
+
+note:
+.....
+the queue module takes care of locking for us which is great advantage
+
+TYPES OF QUEUES:
+...............
+1.FIFO Queue
+2.LIFO 
+3.priority  

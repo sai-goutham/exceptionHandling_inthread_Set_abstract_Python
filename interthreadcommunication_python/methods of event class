@@ -1,0 +1,20 @@
+set()-->internal flag value will become true and it represents GREEN signal for all waiting threads
+ 
+clear()-->internal flag will become fALse and it represents RED signal for all waiting threads
+
+isSet()-->this method can be used whether the event is set or not 
+
+Wait()-->thread will  wait until event is set
+
+
+condition method
+----------------
+
+acquire()-->to acquire condition object before producing or consuming items i.e thread acquiring internal lock 
+
+release()-->to release condition object after  producing or consuming items i.e thread release internal lock 
+
+wait()-->to wait until getting notification or time expired
+
+notify-->to give notification for one  waiting thread
+notify all--> to give notification for all waiting threads 
